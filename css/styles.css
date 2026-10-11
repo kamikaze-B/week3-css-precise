@@ -218,19 +218,21 @@ section {
 }
 
 /* ---- Exercise 14 ---- */
-.landing-grid {
-    display: grid;
-    grid-template-areas:
-        "header header"
-        "sidebar main"
-        "footer footer";
-    grid-template-columns: 1fr 3fr;
-    gap: 10px;
+.landing-grid { display: grid; 
+    grid-template-areas: "header header" "sidebar main" "footer footer"; 
+    grid-template-columns: 250px 1fr; 
+    gap: 15px; 
+    max-width: 900px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    background: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
 }
-.grid-head { grid-area: header; background: #bbb; padding: 20px; }
-.grid-side { grid-area: sidebar; background: #ddd; padding: 20px; }
-.grid-main { grid-area: main; background: #eee; padding: 20px; }
-.grid-foot { grid-area: footer; background: #bbb; padding: 20px; }
+.grid-head { grid-area: header; background: #0066cc; color: white; padding: 20px; text-align: center; border-radius: 6px; }
+.grid-side { grid-area: sidebar; background: #e9ecef; padding: 20px; border-radius: 6px; }
+.grid-main { grid-area: main; background: #f8f9fa; padding: 20px; border-radius: 6px; }
+.grid-foot { grid-area: footer; background: #343a40; color: white; padding: 15px; text-align: center; border-radius: 6px; }
 
 /* ---- Exercise 15 ---- */
 .cards-container {
