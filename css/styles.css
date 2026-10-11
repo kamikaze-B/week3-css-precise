@@ -170,14 +170,24 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    padding: 0;
 }
+
 .gallery-item {
     flex: 1 1 calc(25% - 10px);
-    background: #ccc;
-    padding: 40px;
-    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 8px;
 }
-@media (max-width: 600px) {
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+@media (max-width:600px) {
     .gallery-item {
         flex: 1 1 calc(50% - 10px);
     }
